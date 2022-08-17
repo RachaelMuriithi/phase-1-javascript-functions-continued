@@ -9,7 +9,7 @@ function mondayWork ( activity = 'go to the office') {
 }
 mondayWork ('work from home')
 
-function wrapAdjective (gift) {
+function wrapAdjective (gift = '*') {
     if (gift === '*') {
         return function (today = 'special') {
             return `You are *${today}*!`
@@ -22,5 +22,5 @@ function wrapAdjective (gift) {
     }
     
 }
-wrapAdjective ('*')('a hard worker')
+wrapAdjective ()('a hard worker')
 wrapAdjective ('||')('a dedicated programmer')
